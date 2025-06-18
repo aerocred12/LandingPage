@@ -391,104 +391,60 @@ body {
   }
 }
 
-
-/* === TESTIMONIALS SECTION === */
-.testimonials {
-  background: #f8f9fa;
-  padding: 5rem 6rem;
+.dsa-benefits-section {
+  padding: 80px 20px;
+  background-color: #f9fafc;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.testimonials-header h2 {
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: 1rem;
+.dsa-benefits-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dsa-benefits-section .section-title {
+  font-size: 32px;
+  color: #1d3557;
+  margin-bottom: 40px;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-.testimonials-header p {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  line-height: 1.6;
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eaeaea;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 1s ease forwards;
+.benefit-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.testimonial-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.testimonial-card:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.testimonial-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin-bottom: 1.2rem;
-  object-fit: cover;
-  border: 3px solid var(--primary);
+.benefit-icon {
+  font-size: 24px;
+  color: #219653;
+  flex-shrink: 0;
 }
 
-.testimonial-text {
-  font-size: 1rem;
+.benefit-text {
+  font-size: 18px;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-style: italic;
+  text-align: left;
 }
-
-.testimonial-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.testimonial-role {
-  font-size: 0.95rem;
-  color: #666;
-}
-
-/* === FADE IN ANIMATION === */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .testimonials {
-    padding: 3rem 2rem;
-  }
-
-  .testimonials-header h2 {
-    font-size: 2rem;
-  }
-
-  .testimonial-text {
-    font-size: 0.95rem;
-  }
-}
-
 
 /* === DOWNLOAD APP SECTION === */
 .download-app {
